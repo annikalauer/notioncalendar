@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>February Calendar Widget</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #FAF4F4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .calendar {
+      background: #fff5f5;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 320px;
+    }
+    .calendar h1 {
+      font-family: 'Cursive', sans-serif;
+      font-size: 32px;
+      margin-bottom: 10px;
+      position: relative;
+    }
+    .calendar h1::after {
+      content: '\1F338'; /* Flower emoji */
+      position: absolute;
+      right: -30px;
+      top: 0;
+      font-size: 24px;
+      opacity: 0.5;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      width: 14.28%;
+      padding: 10px 5px;
+      text-align: center;
+      font-size: 16px;
+      color: #333;
+      cursor: pointer;
+    }
+    th {
+      color: #999;
+      font-weight: normal;
+      font-size: 14px;
+    }
+    td:hover {
+      background: #fddede;
+      border-radius: 50%;
+      transition: 0.3s;
+    }
+    .empty {
+      cursor: default;
+      background: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="calendar">
+    <h1>February</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>S</th>
+          <th>M</th>
+          <th>T</th>
+          <th>W</th>
+          <th>T</th>
+          <th>F</th>
+          <th>S</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="empty"></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
+        </tr>
+        <tr>
+          <td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td>
+        </tr>
+        <tr>
+          <td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td>
+        </tr>
+        <tr>
+          <td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td>
+        </tr>
+        <tr>
+          <td>28</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
